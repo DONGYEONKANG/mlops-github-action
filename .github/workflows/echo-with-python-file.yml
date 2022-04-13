@@ -29,3 +29,6 @@ jobs:
       - name: print pwd
         run: pwd
         
+      - name: python file
+        run: python ./mlops-github-action/hello.py
+        
