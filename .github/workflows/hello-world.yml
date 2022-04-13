@@ -9,8 +9,5 @@ jobs:
       - name: hello world with echo # step 1
         run: echo Hello World!
   
-  ecnho-hello2: # Job name
-    runs-on: ubuntu-latest 
-    steps:
-      - name: hello world with echo2
-        run: echo Hello World!2
+      - name: hello world with cli
+        run: python -c "print('Hello world')"
