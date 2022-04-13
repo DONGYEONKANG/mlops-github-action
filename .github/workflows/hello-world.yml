@@ -9,5 +9,8 @@ jobs:
       - name: hello world with echo # step 1
         run: echo Hello World!
   
-      - name: hello world with cli
+      - name: hello world with cli # step 2
         run: python -c "print('Hello world')"
+        
+      - name: python version check
+        run: python --version
