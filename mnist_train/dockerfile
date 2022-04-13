@@ -1,0 +1,9 @@
+FROM python:3.8
+
+RUN pip install tensorflow
+
+# 정의한 train.py를 도커 컨테이너 내 루트 디렉토리에 추가
+ADD train.py /
+
+CMD ["python", "/train.py"]
+
