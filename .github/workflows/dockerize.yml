@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - mnist_train/**
+      - .github/workflows/dockerize.yml 
 
 jobs:
   build:
