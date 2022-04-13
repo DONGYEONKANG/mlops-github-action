@@ -20,8 +20,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     
-      - name: clone reop
-        run: git clone https://github.com/DONGYEONKANG/mlops-github-action.git
+      - uses: actions/checkout@v3
+    
+#       - name: clone reop
+#         run: git clone https://github.com/DONGYEONKANG/mlops-github-action.git
         
       - name: print ls
         run: ls
