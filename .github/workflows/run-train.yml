@@ -18,7 +18,7 @@ jobs:
         
       - name: train with docker
         # host의 directory와 container의 directory를 연결
-        run: docker run -v ${{env.TMP_FOLDER}}:/models anfqlc0311/mnist_train
+        run: docker run -v ${{env.TMP_FOLDER}}:/models anfqlc0311/docker-mnist
         
       - name: ls on tmp
         run: sudo ls ${{env.BASE_DIR}}/${{env.TMP_FOLDER}}/_data/saved_model
